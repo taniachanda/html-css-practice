@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 2px solid rgb(12, 66, 87);
+            /* initialize the container as a flex box  */
+            display: flex;
+            /* flex properties for flex container  */
+
+            /* flex-direction: row; */
+            /* (default value  of flex-direction is no-wrap; ) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+            /*(default value  of flex-direction is no-wrap; ) */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row reverse wrap; */
+
+            /* justify-content: center; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+        }
+
+        .item {
+            background-color: rgb(206, 22, 206);
+            border: rgb(54, 219, 13);
+            margin: 10px;
+            padding: 4px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #item1 {
+            /* Flex properties for a flex item  */
+            /* Higher the order, later it shows up in the container  */
+            /* order: 2; */
+
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+        }
+
+        #item2 {
+            /* flex-flow: 3; */
+            /* flex-shrink: 3; */
+            flex-basis: 150px;
+            /* when flex-direction is set to row flex-basis: will contorl width ; */
+
+            /* when flex-direction is set to column flex-basis: will contorl width ; */
+
+        }
+
+        #item3 {
+            /* order: 40; */
+            /* flex: 2 2 180px; */
+
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First box </div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alighenment Float and Clear</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        * {}
+
+        body {
+            font-family: 'Pacifico', cursive;
+        }
+
+        .container {
+            width: 800px;
+            border: 5px solid rgb(184, 18, 156);
+            margin: 35px auto;
+            background-color: lightpink;
+
+        }
+
+        .section {
+            border: 3px solid rgb(13, 8, 59);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(22, 223, 213);
+        }
+
+        #novel {
+            float: left;
+            width: 46%;
+        }
+
+        #story {
+            float: right;
+            width: 48%;
+        }
+
+        #fiction {
+            /* float: left; */
+            clear: both;
+            width: 98%;
+        }
+
+        p,
+        h3 {
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            width: 400px;
+            margin: 23px auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Welcome To My Library</h1>
+        <div id="novel" class="section">
+            <h3> Novel</h3>
+            <p id="novelsec" class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus nobis
+                ullam excepturi doloribus repudiandae quas dolorem? Provident, eos. Dolorum officiis, laboriosam ullam
+                cupiditate totam, vitae atque sunt ab, esse numquam quod. Harum, dolorem!</p>
+        </div>
+        <div id="story" class="section">
+            <h3> Story </h3>
+            <p id="storysec" class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus nobis
+                ullam excepturi doloribus repudiandae quas dolorem? Provident, eos. Dolorum officiis, laboriosam ullam
+                cupiditate totam, vitae atque sunt ab, esse numquam quod. Harum, dolorem! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Doloremque, fugiat suscipit excepturi facere doloribus odio, quasi
+                perspiciatis dolor ad pariatur vel impedit, commodi incidunt aliquid reiciendis. Voluptatibus recusandae
+                corrupti adipisci quod quidem porro fuga.</p>
+        </div>
+        <div id="fiction" class="section">
+            <h3> Fiction</h3>
+            <p id="fictionsec" class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus
+                nobis ullam excepturi doloribus repudiandae quas dolorem? Provident, eos. Dolorum officiis, laboriosam
+                ullam cupiditate totam, vitae atque sunt ab, esse numquam quod. Harum, dolorem!</Lorem>
+            </p>
+        </div>
+        <div id="non-fiction" class="section">
+            <h3> Fiction</h3>
+            <p id="non-fictionsec" class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus
+                nobis ullam excepturi doloribus repudiandae quas dolorem? Provident, eos. Dolorum officiis, laboriosam
+                ullam cupiditate totam, vitae atque sunt ab, esse numquam quod. Harum, dolorem!</Lorem>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

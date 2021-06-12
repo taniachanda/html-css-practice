@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanda Makeover</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Courgette', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        height: 1000px;
+
+    }
+
+    .left {
+        border: 2px solid red;
+        border: none;
+        display: inline-block;
+        position: absolute;
+        left: 35px;
+        top: 0px;
+
+    }
+
+    .left img {
+        width: 208x;
+        height: 126px;
+        filter: brightness(362%);
+        color: orange;
+    }
+
+    .mid {
+        border: 2px solid rgb(233, 193, 18);
+        display: block;
+        width: 49%;
+        margin: 12px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        border: 2px solid rgb(248, 133, 39);
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: rgb(241, 212, 212);
+        text-decoration: none;
+        padding: 9px 22px;
+        margin: 1px 3px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(240, 129, 25);
+    }
+
+    .btn {
+        font-family: 'Courgette', cursive;
+        margin: 0px 0px;
+        background-color: #3e3e35;
+        color: white;
+        padding: 4px 14px;
+        border: #021b1b;
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(117, 113, 113);
+    }
+
+    .container {
+        border: 2px solid rgb(17, 17, 16);
+        margin: 69px 66px;
+        padding: 3px 2px;
+        width: 30%;
+        border-radius: 11px;
+    }
+
+    .form-group input {
+        font-family: 'Courgette', cursive;
+        text-align: center;
+        display: block;
+        width: 191px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 2px auto;
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 136%;
+        font-weight: bold;
+        color: #f1bf64;
+    }
+
+    .container button {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/mc.png" alt="">
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">LOCATION</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">BOOK ONLINE </button>
+            <button class="btn">GIFT CARD</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>BEAUTY IS A STATE OF MIND <br>RESERVETATION NOW</h1>
+        <form action="form-group">
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR AGE">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR ADDRESS">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR CHOIUCE">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            display: flex;
+            font-family: 'Roboto Slab', serif;
+        }
+        .card{
+            padding: 24px 13px;
+
+            margin:24px 13px ;
+            background-color: greenyellow;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 10px 14px green; */
+            /* box-shadow: -10px -14px green; */
+            /* box-shadow: 10px 14px 8px green; */
+            /* box-shadow: -10px -14px 8px green; */
+            /* box-shadow: -10px -14px 8px 10px green; */
+            /* box-shadow: -10px -14px 8px 10px rgba(66, 233, 141, 0.5); */
+            /* box-shadow: inset 8px 10px green; */
+            box-shadow: 8px 15px green, 9px 16px rgb(248, 14, 14);
+
+        }
+        .card h1{
+            /* text-shadow: 2px 3px darkblue; */
+            /* text-shadow: 2px 3px 4px darkblue; */
+            text-shadow: -2px -3px 4px darkblue;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="card" id="card1">
+        <h1>Box shadow and Text shadow</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusamus cumque harum vitae atque eos labore vero, debitis quod ex, aliquam repellendus repellat, alias consectetur? Animi vero ipsum quo libero incidunt expedita ullam. In facilis officia maxime debitis perspiciatis eum.</p>
+    </div>
+    <div class="card" id="card2">
+        <h1>Box shadow and Text shadow</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusamus cumque harum vitae atque eos labore vero, debitis quod ex, aliquam repellendus repellat, alias consectetur? Animi vero ipsum quo libero incidunt expedita ullam. In facilis officia maxime debitis perspiciatis eum.</p>
+    </div>
+    <div class="card" id="card3">
+        <h1>Box shadow and Text shadow</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusamus cumque harum vitae atque eos labore vero, debitis quod ex, aliquam repellendus repellat, alias consectetur? Animi vero ipsum quo libero incidunt expedita ullam. In facilis officia maxime debitis perspiciatis eum.</p>
+    </div>
+</div>
+</body>
+
+</html>
